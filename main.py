@@ -5,7 +5,6 @@ import astrbot.api.message_components as Comp
 
 # 导入mcstatus库
 from mcstatus import JavaServer, BedrockServer
-from mcstatus.exceptions import *
 import asyncio
 
 @register(
