@@ -46,15 +46,15 @@ class MCStatusPlugin(Star):
                 
             yield event.chain_result(result)
             
-        except ServerNotFound:
-            yield event.plain_result(f"错误：未找到服务器 {address}")
-        except ConnectionRefused:
-            yield event.plain_result(f"错误：连接被拒绝 {address}")
-        except TimeoutError:
-            yield event.plain_result(f"错误：连接超时 {address}")
-        except Exception as e:
-            logger.error(f"查询服务器状态时发生错误: {str(e)}")
-            yield event.plain_result(f"查询失败：{str(e)}")
+        #except ServerNotFound:
+            #yield event.plain_result(f"错误：未找到服务器 {address}")
+        #except ConnectionRefused:
+            #yield event.plain_result(f"错误：连接被拒绝 {address}")
+        #except TimeoutError:
+            #yield event.plain_result(f"错误：连接超时 {address}")
+        #except Exception as e:
+            #logger.error(f"查询服务器状态时发生错误: {str(e)}")
+            #yield event.plain_result(f"查询失败：{str(e)}")
 
     def format_java_status(self, address, status, latency):
         """格式化Java版服务器状态信息"""
