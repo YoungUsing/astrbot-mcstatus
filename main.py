@@ -7,10 +7,10 @@ import re
 
 @register(
     "mcserver_status", 
-    "YourName", 
+    "YoungUsing", 
     "查询Minecraft Java服务器状态插件", 
     "1.0.0", 
-    "https://github.com/yourusername/mcserver_status"
+    "https://github.com/YoungUsing/astrbot-mcstatus/"
 )
 class MCServerStatusPlugin(Star):
     def __init__(self, context: Context):
